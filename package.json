@@ -1,0 +1,35 @@
+{
+  "name": "gamer_tag",
+  "version": "1.0.0",
+  "description": "Create, join, and watch video game matches and tournaments.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kozineffect/Gamer_Tag.git"
+  },
+  "keywords": [
+    "Video",
+    "Games",
+    "Games"
+  ],
+  "author": "Joseph Kozlowski, Michael Emmons, Samuel Knapp, John Leverett, Ernest Davis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kozineffect/Gamer_Tag/issues"
+  },
+  "homepage": "https://github.com/kozineffect/Gamer_Tag#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "express-handlebars": "^3.0.0",
+    "handlebars": "^4.0.10",
+    "method-override": "^2.3.9",
+    "mysql": "^2.13.0",
+    "sequelize": "^4.1.0",
+    "sequelize-cli": "^2.7.0"
+  }
+}
