@@ -4,8 +4,12 @@ $(document).ready(function () {
     var email = $("#email");
     var username = $("#username");
     var password = $("#password");
-    var consoles = $("#consoles");
-    var zipcode = $("#zipcode");
+    var genres = $(".form-check-label");
+    var consoles=$("");
+    var fav1 = $("#fav1");
+    var fav2 = $("#fav2");
+    var fav3 = $("#fav3");
+    
     var userForm = $("#newUserForm");
 
     $(document).on("submit", "#newUserForm", handleFormSubmit)
@@ -23,8 +27,12 @@ $(document).ready(function () {
             email: email.val().trim(),
             username: username.val().trim(),
             password: password.val().trim(),
-            consoles: consoles.val().trim(),
-            zipcode: zipcode.val().trim()
+            genres: genres.val(),
+            FavGame1: fav1.val().trim(),
+            FavGame2: fav2.val().trim(),
+            FavGame3: fav3.val().trim(),
+            consoles: consoles.val()
+            
         };
         submitPost(newPost);
     }
