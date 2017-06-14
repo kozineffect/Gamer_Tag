@@ -6,4 +6,8 @@ module.exports = function (app) {
     res.render("sign_up", db);
   });
 
+   app.get("/tourney", function(req, res) {
+    res.render("tourney", db);
+  });
+
 };
