@@ -19,12 +19,15 @@ module.exports = function(sequelize, DataTypes) {
         type:DataTypes.STRING,
         allowNull:false
     },
-      date_created:{
+    date_created:{
         type:DataTypes.DATE,
         defaultValue:DataTypes.NOW
 
     },
     tournament_date:{
+        type:DataTypes.STRING
+    },
+    tournament_time:{
         type:DataTypes.STRING
     },
     game_title:{
@@ -33,6 +36,21 @@ module.exports = function(sequelize, DataTypes) {
     },
     number_players:{
         type:DataTypes.INTEGER(1)
+    },
+    console:{
+        type:DataTypes.STRING
+    },
+    user1:{
+        type:DataTypes.STRING
+    },
+    user2:{
+        type:DataTypes.STRING
+    },
+    user3:{
+        type:DataTypes.STRING
+    },
+    user4:{
+        type:DataTypes.STRING
     },
     users_in_tournament:{
         type:DataTypes.STRING

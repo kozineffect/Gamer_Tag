@@ -31,14 +31,6 @@ module.exports = function(sequelize, DataTypes) {
         type:DataTypes.STRING,
         allowNull:false
     },
-    consoles:{
-        type:DataTypes.STRING
-        
-    },
-    Genres:{
-        type:DataTypes.STRING
-
-    },
     FavGame1:{
         type:DataTypes.STRING
     },
@@ -50,6 +42,54 @@ module.exports = function(sequelize, DataTypes) {
     },
     zipcode:{
         type:DataTypes.INTEGER(5)
+    },
+    ninSwitch:{
+        type:DataTypes.BOOLEAN,
+        allowNull:true
+    },
+    ps4:{
+        type:DataTypes.BOOLEAN,
+        allowNull:true
+    },
+    xbox1:{
+        type:DataTypes.BOOLEAN,
+        allowNull:true
+    },
+    nin3ds:{
+        type:DataTypes.BOOLEAN,
+        allowNull:true
+    },
+    ninwu:{
+        type:DataTypes.BOOLEAN,
+        allowNull:true
+    },
+    pc:{
+        type:DataTypes.BOOLEAN,
+        allowNull:true
+    },
+    rpg:{
+        type:DataTypes.BOOLEAN,
+        allowNull:true
+    },
+    sports:{
+        type:DataTypes.BOOLEAN,
+        allowNull:true
+    },
+    simulator:{
+        type:DataTypes.BOOLEAN,
+        allowNull:true
+    },
+    adventure:{
+        type:DataTypes.BOOLEAN,
+        allowNull:true
+    },
+    action:{
+        type:DataTypes.BOOLEAN,
+        allowNull:true
+    },
+    actionAdventure:{
+        type:DataTypes.BOOLEAN,
+        allowNull:true
     },
     date_created:{
         type:DataTypes.DATE,
