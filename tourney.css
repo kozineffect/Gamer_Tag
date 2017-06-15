@@ -21,7 +21,7 @@ body {
 			height: 200px;
 		}
 p {
-	background-color: black;
+/*	background-color: black;*/
 	margin-top: 7px;
 	border-radius: 5px;
 }
@@ -57,7 +57,7 @@ p {
 #useavatar {
 	width: 20vh;
 	height: 9vw;
-	border: 10px, yellow, solid;
+	border: 10px, black, solid;
 	border-radius: 5px
 }
 
