@@ -45,51 +45,63 @@ module.exports = function(sequelize, DataTypes) {
     },
     ninSwitch:{
         type:DataTypes.BOOLEAN,
-        allowNull:true
+        allowNull:true,
+        defaultValue: false
     },
     ps4:{
         type:DataTypes.BOOLEAN,
-        allowNull:true
+        allowNull:true,
+        defaultValue: false
     },
     xbox1:{
         type:DataTypes.BOOLEAN,
-        allowNull:true
+        allowNull:true,
+        defaultValue: false
     },
     nin3ds:{
         type:DataTypes.BOOLEAN,
-        allowNull:true
+        allowNull:true,
+        defaultValue: false
     },
     ninwu:{
         type:DataTypes.BOOLEAN,
-        allowNull:true
+        allowNull:true,
+        defaultValue: false
     },
     pc:{
         type:DataTypes.BOOLEAN,
-        allowNull:true
+        allowNull:true,
+        defaultValue: false
     },
     rpg:{
         type:DataTypes.BOOLEAN,
-        allowNull:true
+        allowNull:true,
+        defaultValue: false
     },
     sports:{
         type:DataTypes.BOOLEAN,
-        allowNull:true
+        allowNull:true,
+        defaultValue: false
     },
     simulator:{
         type:DataTypes.BOOLEAN,
-        allowNull:true
+        allowNull:true,
+        defaultValue: false
     },
     adventure:{
         type:DataTypes.BOOLEAN,
-        allowNull:true
+        allowNull:true,
+        defaultValue: false
     },
     action:{
         type:DataTypes.BOOLEAN,
-        allowNull:true
+        allowNull:true,
+        defaultValue: false
     },
     actionAdventure:{
         type:DataTypes.BOOLEAN,
-        allowNull:true
+        allowNull:true,
+        defaultValue: false
     },
     date_created:{
         type:DataTypes.DATE,
