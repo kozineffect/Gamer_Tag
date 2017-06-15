@@ -15,4 +15,8 @@ module.exports = function (app) {
     res.render("tourney", db);
   });
 
+     app.get("/createtourn", function(req, res) {
+    res.render("create_tourn", db);
+  });
+
 };
