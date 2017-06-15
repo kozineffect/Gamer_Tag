@@ -9,8 +9,19 @@ $(document).ready(function () {
     var fav1 = $("#fav1");
     var fav2 = $("#fav2");
     var fav3 = $("#fav3");
-    
+    var ninSwitch = $("#Switch");
+    var ps4 = $("#PS4");
+    var xbox1 = $("#Xbox");
+    var nin3ds = $("#3DS");
+    var ninwu = $("#Wii");
+    var pc = $("#PC");
     var userForm = $("#newUserForm");
+    console.log(ninSwitch);
+    console.log(ps4);
+    console.log(xbox1);
+    console.log(nin3ds);
+    console.log(ninwu);
+    console.log(pc);
     
     $(document).on("submit", "#newUserForm", handleFormSubmit)
     var newPost;
