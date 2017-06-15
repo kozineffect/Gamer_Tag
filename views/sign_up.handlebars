@@ -150,12 +150,43 @@
 				var fav1 = $("#fav1").val().trim();
 				var fav2 = $("#fav2").val().trim();
 				var fav3 = $("#fav3").val().trim();
-				var ninSwitch = $("#Switch").val().trim();
-				var ps4 = $("#PS4").val().trim();
-				var xbox1 = $("#Xbox").val().trim();
-				var nin3ds = $("#3DS").val().trim();
-				var ninwu = $("#Wii").val().trim();
-				var pc = $("#PC").val().trim();
+				if ($('#check_id').is(":checked")) {
+					// it is checked
+					var ninSwitch = $("#Switch").val().trim();
+				} else {
+					var ninSwitch = false;
+				}
+
+				if ($('#check_id').is(":checked")) {
+					// it is checked
+					var ps4 = $("#PS4").val().trim();
+				} else {
+					var ps4 = false;
+				}
+
+				if ($('#check_id').is(":checked")) {
+					// it is checked
+					var xbox1 = $("#Xbox").val().trim();
+				} else {
+					var xbox1 = false;
+				}
+
+				if ($('#check_id').is(":checked")) {
+					// it is checked
+					var nin3ds = $("#3DS").val().trim();
+				} else {
+					var nin3ds = false;
+				}
+				if ($('#check_id').is(":checked")) {
+					var ninwu = $("#Wii").val().trim();
+				} else {
+					var ninwu = false;
+				}
+				if ($('#check_id').is(":checked")) {
+					var pc = $("#PC").val().trim();
+				} else {
+					var pc = false;
+				}
 				console.log(ninSwitch);
 				console.log(ps4);
 				console.log(xbox1);

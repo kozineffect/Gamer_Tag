@@ -1,15 +1,7 @@
 {
   "development": {
     "username": "root",
-<<<<<<< HEAD
     "password": "ditka1985",
-=======
-<<<<<<< HEAD
-    "password": "localhost",
-=======
-    "password": "P#AGOs18",
->>>>>>> e0d3681e20b73ccb639598d9dd266f8cba4b97ee
->>>>>>> b89ff10495ecf3207924136405590b88978a3290
     "database": "game_info",
     "host": "127.0.0.1",
     "dialect": "mysql"
