@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script
+	src="https://code.jquery.com/jquery-3.2.1.min.js"
+	integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+	crossorigin="anonymous"></script>
+</head>
+<header id="clipped">
+	<nav class="navbar">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#">
+					<img alt="Brand" src="GTLogo.png">
+				</a>
+			</div>
+		</div>
+	</nav>
+</header>
+<body>
+	
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-2"></div>
+			<div class="col-xs-8">
+				<div class="panel panel-default">
+					<div class="panel-heading" id="gTag"><h3>Lets get started! Please create an account.</h3></div>
+					<form id="newUserForm">
+						<div class="form-group">
+
+							<div class="panel-body">
+								<label for="first-name">First Name</label>
+								<input type="text" name="first-name" id="first-name">
+							</div>
+
+							<div class="panel-body">
+								<label for="last-name">Last Name</label>
+								<input type="text" name="last-name" id="last-name">
+							</div>
+
+							<div class="panel-body">
+								<label for="email">Email</label>
+								<input type="text" name="email" id="email">
+							</div>
+
+							<div class="panel-body">
+								<label for="email-confirmation">Please confirm email</label>
+								<input type="text" name="email-confirmation" id="email-confirmation">
+							</div>
+
+							<div class="panel-body">
+								<label for="gamer-tag">GamerTag</label>
+								<input type="text" name="gamer-tag" id="gamer-tag">
+							</div>
+
+							<div class="panel-body">
+								<label for="password">Please create a password</label>
+								<input type="password" name="psw" id="password">
+							</div>
+
+							<div class="panel-body">
+								<div class="form-check">
+									<label for="consoles">Please check the consoles that you play on.</label>
+									<ul>
+										<li>
+											<input type="checkbox" name="Xbox">Xbox 1
+										</li>
+										<li>
+											<input type="checkbox" name="ps4">PS4
+										</li>
+										<li>
+											<input type="checkbox" name="nin-swtch">Nintendo Switch
+										</li>
+										<li>
+											<input type="checkbox" name="nin-3ds">Nintendo 3DS
+										</li>
+										<li>
+											<input type="checkbox" name="nin-wu">Nintendo Wii U
+										</li>
+										<li>
+											<input type="checkbox" name="pc">PC
+										</li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="panel-body">
+								<div class="form-check">
+									<label class="form-check-label" for="genres">Please select the game genres that you most enjoy playing</label>
+									<ul>
+										<li>
+											<input class="form-check-input" type="checkbox" name="action">Action
+										</li>
+										<li>
+											<input class="form-check-input" type="checkbox" name="act-adv">Action/adventure
+										</li>
+										<li>
+											<input class="form-check-input" type="checkbox" name="adventure">Adventure
+										</li>
+										<li>
+											<input class="form-check-input" type="checkbox" name="rpg">RPG
+										</li>
+										<li>
+											<input class="form-check-input" type="checkbox" name="sim">Simulator
+										</li>
+										<li>
+											<input class="form-check-input" type="checkbox" name="sports">Sports
+										</li>
+									</ul>
+								</div>
+								<label for="fav-games">Please list your three favorite games.</label>
+								<div class="form-group-row">
+									<div class="col-xs-12, favs">
+										<input id="fav1" type="text" name="fav1">
+									</div>
+								</div>
+								<div class="form-group-row">
+									<div class="col-xs-12, favs">
+										<input id="fav2" type="text" name="fav2">
+									</div>
+								</div>
+								<div class="form-group-row">
+									<div class="col-xs-12, favs">
+										<input id="fav3" type="text" name="fav3">
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-group-row">
+							<button type="submit" class="btn btn-primary btn-md"><span class="glyphicon glyphicon-hdd"></span> Sign me up!</button> 
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -28,7 +28,8 @@ p {
 
 #navbox {
 	float: right;
-	width: 200px;
+	width: 150px;
+	display: inline;
 }
 
 #gameart {
@@ -41,10 +42,25 @@ p {
 	width: 70vw;
 }
 
+.table {
+	display: table;
+}
+
 .trans {
-	background: rgba(180, 180, 180, 0.6);
+	background: rgba(255, 117, 26, 0.6);
 }
 
 .labelinput {
 	float: right;
+}
+
+#useavatar {
+	width: 20vh;
+	height: 9vw;
+	border: 10px, yellow, solid;
+	border-radius: 5px
+}
+
+.inputs {
+	display: table-cell;
 }
