@@ -1,11 +1,5 @@
 module.exports = function(sequelize, DataTypes) {
   var tournament = sequelize.define("tournament", {
-    // id: {
-    //     type: DataTypes.INTEGER,
-    //     allowNull: false,
-    //     primaryKey:true
-    
-    // },
         city:{
         type:DataTypes.STRING,
         allowNull:false
