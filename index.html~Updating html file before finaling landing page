@@ -10,35 +10,26 @@
 
   <!-- Latest compiled JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<<<<<<< HEAD:index.html
-  <link href="../assets/css/jquery.bxslider.css" rel="stylesheet" />
-  <link href="../assets/css/style2.css" rel="stylesheet">
-  <link href="../assets/css/modal.css" rel="stylesheet">
-  <link href="../assets/css/nav.css" rel="stylesheet">
-=======
-  <link href="./css/jquery.bxslider.css" rel="stylesheet" />
-  <link href="./css/style.css" rel="stylesheet">
-  <link href="./css/modal.css" rel="stylesheet">
-  <link href="./css/nav.css" rel="stylesheet">
->>>>>>> Updating html file before finaling landing page.:views/index.html
+  <link href="views/css/style.css" rel="stylesheet">
+  <link href="views/css/modal.css" rel="stylesheet">
+  <link href="views/css/nav.css" rel="stylesheet">
   <!-- <link rel="shortcut icon" type="image/png" href="img/w3-favicon.png"> -->
 
 </head>
 <body>
 	<a name="home">
 		<!--- Start Navigation -->
-		<script src="js/jquery-1.11.2.min.js"></script>
-		<script src="../assets/js/main.js"></script> 
+		<script src="views/js/jquery-1.11.2.min.js"></script>
+		<script src="views/js/main.js"></script> 
 
 		<!-- change this to black -->
 		<div class ="nav-outer">
 			<div class ="nav-wrap">
 				<nav class ="navigation">
-					<div class ="logo"><a href="#home"><img src="../assets/img/logo.png"></a></div>
+					<div class ="logo"><a href="#home"><img src="views/img/logo.png"></a></div>
 					<div class ='nav' nav-menu-style="yoga">
            <ul class ="nav-menu">
             <li><a href="#" id ="signIn" data-toggle="modal" data-target="#signIn-modal">Sign In</a></li>
-            <li><a href="#sign-up">Sign Up</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#tournaments">Tournaments</a></li>
           </div>	
@@ -59,21 +50,21 @@
       <div class="carousel-inner">
         <div class="item active">
 
-          <img src="../assets/img/img1.jpg" alt="Image1">
+          <img src="views/img/img1.jpg" alt="Image1">
           <div class="carousel-caption">
             <h1>SOME TEXT</h1>
           </div>
         </div>
 
         <div class="item">
-          <img src="../assets/img/img2.jpg" alt="Image2">
+          <img src="views/img/img2.jpg" alt="Image2">
           <div class="carousel-caption">
             <h1>SOME TEXT</h1>
           </div>
         </div>
 
         <div class="item">
-          <img src="../assets/img/img3.jpg" alt="Image3">
+          <img src="views/img/img3.jpg" alt="Image3">
           <div class="carousel-caption">
             <h1>SOME TEXT</h1>
             
@@ -81,7 +72,7 @@
         </div>
         
         <div class="item">
-          <img src="../assets/img/img4.jpg" alt="Image4">
+          <img src="views/img/img4.jpg" alt="Image4">
           <div class="carousel-caption">
             <h1>SOME TEXT</h1>
           </div>
@@ -140,12 +131,13 @@
 
 
 <!-- Modal -->
-<script src="../assets/js/modal.js"></script>
+<script src="views/js/modal.js"></script>
 <!-- BEGIN # MODAL LOGIN -->
 <div class="modal fade" id="signIn-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
  <div class="modal-dialog">
    <div class="modal-content">
     <div class="modal-header" align="center">
+
       <div class= "text-center">
        <h1>[LOGO]</h1>
      </div>
@@ -176,11 +168,11 @@
       </div>
       <div class="modal-footer">
         <div>
-          <button type="submit" class="btn btn-primary btn-lg btn-block">Login</button>
+          <button type="submit" class="btn btn-success btn-lg btn-block">Login</button>
         </div>
         <div>
           <button id="login_lost_btn" type="button" class="btn btn-link">Lost Password?</button>
-          <button id="login_register_btn" type="button" class="btn btn-link">Register</button>
+          <button id="login_register_btn" type="button" class="btn btn-link">Create Profile</button>
         </div>
       </div>
     </form>
@@ -197,37 +189,39 @@
     </div>
     <div class="modal-footer">
       <div>
-        <button type="submit" class="btn btn-primary btn-lg btn-block">Send</button>
+        <button type="submit" class="btn btn-success btn-lg btn-block">Send</button>
       </div>
       <div>
         <button id="lost_login_btn" type="button" class="btn btn-link">Log In</button>
-        <button id="lost_register_btn" type="button" class="btn btn-link">Register</button>
+        <button id="lost_register_btn" type="button" class="btn btn-link">Create Profile</button>
       </div>
     </div>
   </form>
   <!-- End | Lost Password Form -->
   
   <!-- Begin | Register Form -->
-  <form id="register-form">
+  <div class="container">
+  <form id="register-form" class="form-inline">
     <div class="modal-body">
       <div id="div-register-msg">
         <div id="icon-register-msg" class="glyphicon glyphicon-chevron-right"></div>
-        <span id="text-register-msg">Register an account.</span>
+        <span id="text-register-msg">Create a Profile.</span>
       </div>
       <input id="register_firstname" class="form-control" type="text" placeholder="First Name" required>
       <input id="register_lastname" class="form-control" type="text" placeholder="Last Name" required>
       <input id="register_username" class="form-control" type="text" placeholder="Username" required>
       <input id="register_email" class="form-control" type="text" placeholder="E-Mail" required>
       <input id="register_password" class="form-control" type="password" placeholder="Password" required>
-
+      <input id="confirm_password" class="form-control" type="password" placeholder="Confirm Password" required>
     </div>
     <div class="modal-footer">
       <div>
-        <button type="submit" class="btn btn-primary btn-lg btn-block">Register</button>
+        <button type="submit" class="btn btn-success btn-lg btn-block">Create Profile</button>
       </div>
       <div>
         <button id="register_login_btn" type="button" class="btn btn-link">Log In</button>
         <button id="register_lost_btn" type="button" class="btn btn-link">Lost Password?</button>
+      </div>
       </div>
     </div>
   </form>

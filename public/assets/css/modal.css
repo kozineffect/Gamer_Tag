@@ -141,10 +141,13 @@
    margin-top: -250px;
 }
 
-#lost-form{
+#login-modal, #lost-form, #register-form {
     display:none;
 }
 
+.modal-content{
+    overflow: auto;
+}
 
 .carousel-caption {
     position: absolute;
@@ -156,6 +159,15 @@
     color:#fff;
     height:100px;
 }
+
+ .container {
+        width: 500px;
+        clear: both;
+    }
+    .container input {
+        width: 100%;
+        clear: both;
+    }
 
 
 
