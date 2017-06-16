@@ -6,6 +6,12 @@ module.exports = function(sequelize, DataTypes) {
         primaryKey:true
     
     },
+        city:{
+        type:DataTypes.STRING,
+        allowNull:false
+
+    },
+        
     user_admin:{
         type:DataTypes.STRING,
         allowNull:false
@@ -27,12 +33,18 @@ module.exports = function(sequelize, DataTypes) {
     tournament_date:{
         type:DataTypes.STRING
     },
+        end_date:{
+        type:DataTypes.STRING
+    },
+            cutoff:{
+        type:DataTypes.STRING
+    },
     tournament_time:{
         type:DataTypes.STRING
     },
     game_title:{
         type:DataTypes.STRING,
-        allowNull:false
+        // allowNull:false
     },
     number_players:{
         type:DataTypes.INTEGER(1)
