@@ -1,11 +1,11 @@
 module.exports = function(sequelize, DataTypes) {
   var tournament = sequelize.define("tournament", {
-    id: {
-        type: DataTypes.INTEGER,
-        allowNull: false,
-        primaryKey:true
+    // id: {
+    //     type: DataTypes.INTEGER,
+    //     allowNull: false,
+    //     primaryKey:true
     
-    },
+    // },
         city:{
         type:DataTypes.STRING,
         allowNull:false
@@ -38,38 +38,38 @@ module.exports = function(sequelize, DataTypes) {
     },
             cutoff:{
         type:DataTypes.STRING
-    },
-    tournament_time:{
-        type:DataTypes.STRING
-    },
-    game_title:{
-        type:DataTypes.STRING,
-        // allowNull:false
-    },
-    number_players:{
-        type:DataTypes.INTEGER(1)
-    },
-    console:{
-        type:DataTypes.STRING
-    },
-    user1:{
-        type:DataTypes.STRING
-    },
-    user2:{
-        type:DataTypes.STRING
-    },
-    user3:{
-        type:DataTypes.STRING
-    },
-    user4:{
-        type:DataTypes.STRING
-    },
-    users_in_tournament:{
-        type:DataTypes.STRING
-    },
-    admin_verify:{
-        type:DataTypes.BOOLEAN
     }
+    // tournament_time:{
+    //     type:DataTypes.STRING
+    // },
+    // game_title:{
+    //     type:DataTypes.STRING,
+    //     // allowNull:false
+    // },
+    // number_players:{
+    //     type:DataTypes.INTEGER(1)
+    // },
+    // console:{
+    //     type:DataTypes.STRING
+    // },
+    // user1:{
+    //     type:DataTypes.STRING
+    // },
+    // user2:{
+    //     type:DataTypes.STRING
+    // },
+    // user3:{
+    //     type:DataTypes.STRING
+    // },
+    // user4:{
+    //     type:DataTypes.STRING
+    // },
+    // users_in_tournament:{
+    //     type:DataTypes.STRING
+    // },
+    // admin_verify:{
+    //     type:DataTypes.BOOLEAN
+    // }
 
   });
   return tournament;

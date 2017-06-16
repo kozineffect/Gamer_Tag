@@ -1,0 +1,68 @@
+<body id="tourney">
+	<header id="clipped1">
+		<nav class="navbar">
+			<div id="navbox"><p class="tourneyP">Username</p>
+				<p class="tourneyP">Admin</p>
+			</div>
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="#">
+						<img alt="Brand" src="../assets/img/GTLogo.png">
+					</a>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<div class="container1">
+		<div class="row">
+			<div class="col-md-12 stgbrd"><p id="tourneyName" class="tourneyP">LIST OF TOURNAMENTS<p></div><br><br>
+		<div class="tourn-container"></div>
+        </div>
+	</div>
+    <script>
+        $(document).ready(function() {
+  // Getting a reference to the input field where user adds a new todo
+  var newItemInput = $("input.new-item");
+  // Our new todos will go inside the todoContainer
+  var tournContainer = $(".tourn-container");
+
+
+  // Our initial todos array
+  var tourn;
+
+  // Getting todos from database when page loads
+  getTourn();
+
+  // This function resets the todos displayed with new todos from the database
+  function initializeRows() {
+    tournContainer.empty();
+    var rowsToAdd = [];
+    for (var i = 0; i < tourn.length; i++) {
+      rowsToAdd.push(createNewRow(tourn[i]));
+    }
+    tournContainer.prepend(rowsToAdd);
+  }
+
+  // This function grabs todos from the database and updates the view
+  function getTourn() {
+    $.get("/api/tournament", function(data) {
+      tourn = data;
+      console.log(tourn);
+      initializeRows();
+    });
+  }
+
+  // This function constructs a todo-item row
+  function createNewRow(tourn) {
+    var newInputRow = $("<li>");
+    newInputRow.addClass("list-group-item tourn-item");
+    var newTournSpan = $("<span>");
+    newTournSpan.text(tourn.tournament_name + " - " + tourn.city + " - " + tourn.tournament_date);
+    newInputRow.append(newTournSpan);
+    return newInputRow;
+  }
+
+});
+
+    </script>
+</body>

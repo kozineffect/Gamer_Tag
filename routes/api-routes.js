@@ -16,13 +16,14 @@ app.post("/api/users", function (req,res){
 });
 
 app.get("/api/tournament", function(req,res){
-    db.user.findAll().then(function(dbuser){
+    db.tournament.findAll().then(function(dbuser){
         res.json(dbuser)
     });
 });
 
 app.post("/api/tournament", function (req,res){
-   db.user.create(req.body).then(function(dbuser){
+    console.log(req.body);
+   db.tournament.create(req.body).then(function(dbuser){
         res.json(dbuser);
     });
 });

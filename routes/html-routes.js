@@ -8,7 +8,8 @@ module.exports = function (app) {
   });
    
    app.get("/", function(req, res) {
-    res.sendFile(path.join(__dirname, "../index.html"));
+    // res.sendFile(path.join(__dirname, "../index.html"));
+    res.render("index", db);
   });
 
    app.get("/tourney", function(req, res) {
@@ -17,6 +18,10 @@ module.exports = function (app) {
 
      app.get("/createtourn", function(req, res) {
     res.render("create_tourn", db);
+  });
+
+     app.get("/tournlist", function(req, res) {
+          res.render("tourn_list", db);
   });
 
 };
