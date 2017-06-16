@@ -60,7 +60,7 @@ h3 {
 }
 
 body {
-	background-image: url(profileBG.jpg);
+	background-image: url(../img/profileBG.jpg);
 	background-attachment: fixed;
 	background-size: cover;
 	background-repeat: no-repeat;
