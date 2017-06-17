@@ -197,11 +197,54 @@
         <input id="register_username" class="form-control" type="text" placeholder="Username" required>
         <input id="register_email" class="form-control" type="text" placeholder="E-Mail" required>
         <input id="register_password" class="form-control" type="password" placeholder="Password" required>
-
-      </div>
+        <input id="confirm_password" class="form-control" type="password" placeholder="Confirm Password" required>        
+        <div class="panel-body">
+                <div class="form-check">
+                  <label class="form-check-label" for="genres">Please select the game genres that you most enjoy playing</label>
+                  <ul>
+                    <li>
+                      <input class="form-check-input checkbox-inline" type="checkbox" name="action">Action
+                    </li>
+                    <li>
+                      <input class="form-check-input checkbox-inline" type="checkbox" name="act-adv">Action/adventure
+                    </li>
+                    <li>
+                      <input class="form-check-input checkbox-inline" type="checkbox" name="adventure">Adventure
+                    </li>
+                    <li>
+                      <input class="form-check-input checkbox-inline" type="checkbox" name="rpg">RPG
+                    </li>
+                    <li>
+                      <input class="form-check-input checkbox-inline" type="checkbox" name="sim">Simulator
+                    </li>
+                    <li>
+                      <input class="form-check-input checkbox-inline" type="checkbox" name="sports">Sports
+                    </li>
+                  </ul>
+</div>
+</div>                  
+      <label for="fav-games">Please list your three favorite games.</label>
+                <div class="form-group-row">
+                  <div class="col-xs-12, favs">
+                    <input id="fav1" type="text" name="fav1">
+                  </div>
+                </div>
+                <div class="form-group-row">
+                  <div class="col-xs-12, favs">
+                    <input id="fav2" type="text" name="fav2">
+                  </div>
+                </div>
+                <div class="form-group-row">
+                  <div class="col-xs-12, favs">
+                    <input id="fav3" type="text" name="fav3">
+                  </div>
+                </div>
+              
+                            
+    <!--   </div> -->
       <div class="modal-footer">
         <div>
-          <button type="submit" class="btn btn-success btn-lg btn-block">Register</button>
+          <button type="submit" class="btn btn-success btn-lg btn-block">Sign Me Up!</button>
         </div>
         <div>
           <button id="register_login_btn" type="button" class="btn btn-link">Log In</button>
