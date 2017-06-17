@@ -123,7 +123,7 @@
 						</div>
 
 						<div class="form-group-row">
-							<button type="submit" class="btn btn-primary btn-md"><span class="glyphicon glyphicon-hdd"></span><a href="/profile"> Sign me up!<a/></button>
+							<button type="submit" class="btn btn-primary btn-md"><span class="glyphicon glyphicon-hdd"></span>> Sign me up!</button>
 						</div>
 					</form>
 				</div>
@@ -202,15 +202,34 @@
 					// consoles: consoles
 
 				};
+				var firstName = $("#first_name").val("");
+				var lastName = $("#last_name").val("")
+				var email = $("#email").val("")
+				
+				var username = $("#username").val("")
+				var password = $("#password").val("")
+				// var genres = [];
+				// var consoles=[];
+				var fav1 = $("#fav1").val("")
+				var fav2 = $("#fav2").val("")
+				var fav3 = $("#fav3").val("")
+				$("#email-confirmation").val("")
 				submitPost(newPost);
+				redirect();
+
+				
 			}
 
 			function submitPost(post) {
 				$.post("/api/users", post, function () {
 					console.log(post);
-
+					
 				})
 			}
+			function redirect()
+{
+    window.location.href="/profile";
+}
 
 		});
 	</script>
