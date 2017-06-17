@@ -45,8 +45,8 @@ body {
 }
 
 #gameart {
-	height: 250px;
-	width: 250px;
+	height: 50vh;
+	width: 30vw;
 	border-radius: 5px;
 }
 
