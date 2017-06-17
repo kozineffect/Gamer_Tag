@@ -44,6 +44,11 @@ body {
 	width: 52vw;
 }
 
+#navbox2 {
+	float: right;
+	width: 30vw;
+}
+
 #gameart {
 	height: 50vh;
 	width: 30vw;
