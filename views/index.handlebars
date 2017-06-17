@@ -32,6 +32,7 @@
 </head>
 <body>
   <a name="home">
+  
     <!--- Start Navigation -->
     <script src="../public/assets/js/jquery-1.11.2.min.js"></script>
     <script src="../public/assets//js/main.js"></script> 
@@ -40,11 +41,13 @@
       <div class ="nav-wrap">
         <nav class ="navigation">
          <div class ='nav' nav-menu-style="yoga">
+
            <ul class ="nav-menu">
-            <li><a href="#" id ="signIn" class="gtek" data-toggle="modal" data-target="#signIn-modal">Sign In</a></li>
-            <li><a class="gtek"  href="#about">About</a></li>
-            <li><a class="gtek"  href="#tournaments">Tournaments</a></li>
-          </div>  
+            <li><a href="#" id ="signIn" data-toggle="modal" data-target="#signIn-modal">Sign In</a></li>
+            <li><a href="/user">Sign Up</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="/tourney_list">Tournaments</a></li>
+          </div>
         </nav>
       </div>
     </div>
@@ -176,7 +179,7 @@
       </div>
       <div class="modal-footer">
         <div>
-          <button type="submit" class="btn btn-success btn-lg btn-block">Send</button>
+          <button type="submit" class="btn btn-primary btn-lg btn-block"><a href="http://google.com">Login</a></button>
         </div>
         <div>
           <button id="lost_login_btn" type="button" class="btn btn-link">Log In</button>
