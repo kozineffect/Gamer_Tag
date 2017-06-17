@@ -138,6 +138,9 @@ module.exports = function (sequelize, DataTypes) {
             type: DataTypes.DATE,
             defaultValue: DataTypes.NOW
 
+        },
+        embed: {
+            type: DataTypes.STRING(1000)
         }
     },{
     // Creating a custom method for our User model. This will check if an unhashed password entered by

@@ -119,11 +119,21 @@
 										<input id="fav3" type="text" name="fav3">
 									</div>
 								</div>
+								<label for="embed">Enter your Facebook Live embed code</label>
+								<div class="form-group-row">
+									<div class="col-xs-12, favs">
+										<input id="embed" type="text" name="embed">
+									</div>
+								</div>
 							</div>
 						</div>
 
 						<div class="form-group-row">
-							<button type="submit" class="btn btn-primary btn-md"><span class="glyphicon glyphicon-hdd"></span><a href="/profile"> Sign me up!<a/></button>
+<<<<<<< HEAD
+							<button type="submit" class="btn btn-primary btn-md"><span class="glyphicon glyphicon-hdd"></span>Sign me up!</button>
+=======
+							<button type="submit" class="btn btn-primary btn-md"><span class="glyphicon glyphicon-hdd"></span>> Sign me up!</button>
+>>>>>>> 0152cec39f4a3ac11bee22450d49afd6831d1f1c
 						</div>
 					</form>
 				</div>
@@ -146,11 +156,10 @@
 				var email = $("#email").val().trim();
 				var username = $("#username").val().trim();
 				var password = $("#password").val().trim();
-				// var genres = [];
-				// var consoles=[];
 				var fav1 = $("#fav1").val().trim();
 				var fav2 = $("#fav2").val().trim();
 				var fav3 = $("#fav3").val().trim();
+				var embed = $("#embed").val().trim();
 				if ($('#Switch').is(":checked")) {
 					// it is checked
 					ninSwitch = $("#Switch").val().trim();
@@ -198,19 +207,44 @@
 					// genres: genres,
 					FavGame1: fav1,
 					FavGame2: fav2,
-					FavGame3: fav3
+					FavGame3: fav3,
+					embed: embed
 					// consoles: consoles
 
 				};
+				var firstName = $("#first_name").val("");
+				var lastName = $("#last_name").val("")
+				var email = $("#email").val("")
+				
+				var username = $("#username").val("")
+				var password = $("#password").val("")
+				// var genres = [];
+				// var consoles=[];
+				var fav1 = $("#fav1").val("")
+				var fav2 = $("#fav2").val("")
+				var fav3 = $("#fav3").val("")
+				$("#email-confirmation").val("")
 				submitPost(newPost);
+				redirect();
+
+				
 			}
 
 			function submitPost(post) {
 				$.post("/api/users", post, function () {
 					console.log(post);
+<<<<<<< HEAD
 
+
+=======
+					
+>>>>>>> 0152cec39f4a3ac11bee22450d49afd6831d1f1c
 				})
 			}
+			function redirect()
+{
+    window.location.href="/profile";
+}
 
 		});
 	</script>

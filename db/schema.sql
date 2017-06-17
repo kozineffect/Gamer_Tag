@@ -65,6 +65,7 @@ CREATE TABLE users
         action BOOLEAN,
         actionAdventure BOOLEAN,
         date_created DATE,
+        embed varchar(120),
         PRIMARY KEY(id)
 
     );

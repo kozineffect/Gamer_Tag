@@ -130,6 +130,7 @@
 					cutoff: cutoff,
 				};
 				submitPost(newPost);
+				redirect();
 			}
 
 			function submitPost(post) {
@@ -138,7 +139,10 @@
 
 				})
 			}
-
+			function redirect()
+{
+    window.location.href="/tourney_list";
+}
 		});
 	</script>
 </body>

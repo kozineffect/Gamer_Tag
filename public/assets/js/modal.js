@@ -28,6 +28,7 @@
      loginUser(userData.username, userData.password);
     $("#login_username").val("");
     $('#login_password').val("");
+    window.location.href = "/profile";
   });
   
   function loginUser(username, password) {
