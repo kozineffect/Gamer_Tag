@@ -18,7 +18,7 @@
     var $msgAnimateTime = 150;
     var $msgShowTime = 2000;
 
-    $("form").submit(function (event) {
+    $("#login-form").submit(function (event) {
        event.preventDefault();
   
       var username = $("#login_username").val();
