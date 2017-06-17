@@ -1,12 +1,12 @@
-<<<<<<< HEAD
+
 @import url(https://fonts.googleapis.com/css?family=Questrial); /*--- Nav Font --*/
 /*--- Start Navigation Style --*/
-=======
+
 @font-face {
     font-family: gtek;
     src: url('../fonts/gtek.ttf');
 }
->>>>>>> 0b7269c3f3bb761171c60f0429f39a06d0b9cf56
+
 
 .nav-outer {
 	width: 100%;
@@ -16,16 +16,9 @@
 	z-index: 100000000;
 }
 
-/*#clipped {
-	-webkit-clip-path: polygon(100% 0, 100% 100pt, 50% 83pt, 0 110pt, 0 0);
-	clip-path: polygon(100% 0, 100% 100pt, 50% 83pt, 0 110pt, 0 0);
-	background-color: rgb(255, 128, 0);
-	height: 250px;
-	padding-bottom: 0;
-}*/
 
 .nav-wrap {
-	max-width: 1120px;
+	max-width: 100%;
 	margin: 0 auto;
 }
 nav {
