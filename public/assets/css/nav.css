@@ -1,5 +1,12 @@
+<<<<<<< HEAD
 @import url(https://fonts.googleapis.com/css?family=Questrial); /*--- Nav Font --*/
 /*--- Start Navigation Style --*/
+=======
+@font-face {
+    font-family: gtek;
+    src: url('../fonts/gtek.ttf');
+}
+>>>>>>> 0b7269c3f3bb761171c60f0429f39a06d0b9cf56
 
 .nav-outer {
 	width: 100%;
@@ -24,7 +31,7 @@
 nav {
 	margin-top: 0;
 	background: #ff8000;
-	font-family: 'Questrial', sans-serif;
+	font-family: 'gtek', sans-serif;
 }
 .nav ul {
 	overflow:hidden;
@@ -34,8 +41,8 @@ nav {
 	cursor:pointer;
 }
 .navigation {
-	clear: both;
 	width: 100%;
+	
 	position: relative;
 }
 .nav a {
@@ -170,11 +177,11 @@ body .nav .nav-menu li a {
 	}
 }
 .logo img {
-	max-width: 200px;
+	max-width: 280px;
 	height: auto;
-	margin-top: 7px;
-	margin-lef30px;
-	margin-bottom: 5px;
+	margin: 7px 0 10px 5px;
+
+
 }
 .navigation:after {
 	content: "";
