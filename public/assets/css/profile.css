@@ -3,8 +3,8 @@
 }
 
 #clipped{
-	-webkit-clip-path: polygon(100% 0, 100% 19%, 50% 13%, 0 22%, 0 0);
-	clip-path: polygon(100% 0, 100% 50pt, 50% 33pt, 0 60pt, 0 0);
+	-webkit-clip-path: polygon(100% 0, 100% 100pt, 50% 83pt, 0 110pt, 0 0);
+	clip-path: polygon(100% 0, 100% 100pt, 50% 83pt, 0 110pt, 0 0);
 	background-color: rgb(255, 128, 0);
 	height: 250px;
 	padding-bottom: 0;
@@ -57,12 +57,4 @@
 
 h3 {
 	margin-bottom: 25px;
-}
-
-body {
-	background-image: url(../img/profileBG.jpg);
-	background-attachment: fixed;
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
 }

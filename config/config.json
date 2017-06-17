@@ -1,25 +1,21 @@
 {
   "development": {
     "username": "root",
-<<<<<<< HEAD
     "password": "localhost",
-=======
-    "password": "ditka1985",
->>>>>>> 0b7269c3f3bb761171c60f0429f39a06d0b9cf56
     "database": "game_info",
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
   "test": {
     "username": "root",
-    "password": "ditka1985",
+    "password": "youngthing90",
     "database": "game_info",
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
   "production": {
     "username": "root",
-    "password": "ditka1985",
+    "password": "youngthing90",
     "database": "game_info",
     "host": "127.0.0.1",
     "dialect": "mysql"
