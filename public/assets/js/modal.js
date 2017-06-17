@@ -1,13 +1,3 @@
-/* #####################################################################
-   #
-   #   Project       : Modal Login with jQuery Effects
-   #   Author        : Rodrigo Amarante (rodrigockamarante)
-   #   Version       : 1.0
-   #   Created       : 07/29/2015
-   #   Last Change   : 08/04/2015
-   #
-   ##################################################################### */
-   
    $(function() {
 
     var $formLogin = $('#login-form');
@@ -38,6 +28,7 @@
      loginUser(userData.username, userData.password);
     $("#login_username").val("");
     $('#login_password').val("");
+    window.location.href = "/profile";
   });
   
   function loginUser(username, password) {
