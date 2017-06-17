@@ -1,5 +1,6 @@
 var db = require("../models");
 var path = require("path");
+var isAuthenticated = require("../config/middleware/isAuthenticated");
 
 module.exports = function (app) {
   // index route loads view.html
@@ -9,10 +10,13 @@ module.exports = function (app) {
    
    app.get("/", function(req, res) {
     // res.sendFile(path.join(__dirname, "../index.html"));
-    res.render("index", db);
+   if(req.user){
+   res.redirect("/tourney");
+  }
+  res.render("index",db);
   });
 
-   app.get("/tourney", function(req, res) {
+   app.get("/tourney",isAuthenticated, function(req, res) {
     res.render("tourney", db);
   });
 
@@ -20,8 +24,12 @@ module.exports = function (app) {
     res.render("create_tourn", db);
   });
 
-     app.get("/tournlist", function(req, res) {
+     app.get("/tournlist",isAuthenticated, function(req, res) {
           res.render("tourn_list", db);
   });
+app.get("/login", function(req, res) {
+    res.render("create_tourn", db);
+  });
+ 
 
 };
