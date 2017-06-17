@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>GamerTag Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GamerTag Home</title>
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
@@ -23,6 +23,7 @@
   <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Rammetto+One" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Bowlby+One" rel="stylesheet">
 
 
   <!-- Tab Logo -->
@@ -32,17 +33,6 @@
 <body>
 	<a name="home">
 		<!--- Start Navigation -->
-<<<<<<< HEAD
-		<script src="js/jquery-1.11.2.min.js"></script>
-		<script src="../assets/js/main.js"></script> 
-
-		<!-- change this to black -->
-		<div id="clipped" class ="nav-outer">
-			<div class ="nav-wrap">
-				<nav class ="navigation">
-					<div class ="logo"><a href="#home"><img src="../assets/img/logo.png"></a></div>
-					<div class ='nav' nav-menu-style="yoga">
-=======
 		<script src="public/assets/js/jquery-1.11.2.min.js"></script>
 		<script src="public/assets//js/main.js"></script> 
 		<div class ="nav-outer">
@@ -50,12 +40,11 @@
       <div class ="nav-wrap">
         <nav class ="navigation">
          <div class ='nav' nav-menu-style="yoga">
->>>>>>> 0b7269c3f3bb761171c60f0429f39a06d0b9cf56
            <ul class ="nav-menu">
             <li><a href="#" id ="signIn" class="gtek" data-toggle="modal" data-target="#signIn-modal">Sign In</a></li>
             <li><a class="gtek"  href="#about">About</a></li>
             <li><a class="gtek"  href="#tournaments">Tournaments</a></li>
-          </div>	
+          </div>  
         </nav>
       </div>
     </div>
@@ -122,7 +111,7 @@
        <section class="parallax-1">
          <div class="parallax-inner">
            <h3 class="text-center"> The Little Things Matter!</h3>
-           <p class="text-center">Watch your back, but more importantly when you get out the shower, dry your back, it’s a cold world out there. Find peace, life is like a water fall, you’ve gotta flow. Put it this way, it took me twenty five years to get these plants, twenty five years of blood sweat and tears, and I’m never giving up, I’m just getting started. The key is to enjoy life, because they don’t want you to enjoy life. I promise you, they don’t want you to jetski, they don’t want you to smile. Life is what you make it, so let’s make it.</p>
+           <p class="text-center">GamerTag is a revolutionary approach to online multiplayer gaming tournaments! Not only are you able to view tournaments all across the world (Yes... the world), you have the ability to choose which gamer stream you want to view! </p>
         
          
         </div>
@@ -170,7 +159,7 @@
           </div>
           <div>
             <button id="login_lost_btn" type="button" class="btn btn-link">Lost Password?</button>
-            <button id="login_register_btn" type="button" class="btn btn-link">Register</button>
+            <button id="login_register_btn" type="button" class="btn btn-link">Create GamerTag Account</button>
           </div>
         </div>
       </form>
@@ -191,7 +180,7 @@
         </div>
         <div>
           <button id="lost_login_btn" type="button" class="btn btn-link">Log In</button>
-          <button id="lost_register_btn" type="button" class="btn btn-link">Register</button>
+          <button id="lost_register_btn" type="button" class="btn btn-link">Create GamerTag Account</button>
         </div>
       </div>
     </form>
@@ -204,16 +193,83 @@
           <div id="icon-register-msg" class="glyphicon glyphicon-chevron-right"></div>
           <span id="text-register-msg">Register an account.</span>
         </div>
-        <input id="register_firstname" class="form-control" type="text" placeholder="First Name" required>
-        <input id="register_lastname" class="form-control" type="text" placeholder="Last Name" required>
-        <input id="register_username" class="form-control" type="text" placeholder="Username" required>
-        <input id="register_email" class="form-control" type="text" placeholder="E-Mail" required>
-        <input id="register_password" class="form-control" type="password" placeholder="Password" required>
+        <input id="first-name" class="form-control" type="text" placeholder="First Name" required>
+        <input id="last-name" class="form-control" type="text" placeholder="Last Name" required>
+        <input id="username" class="form-control" type="text" placeholder="Username" required>
+        <input id="email" class="form-control" type="text" placeholder="E-Mail" required>
+        <input id="confirm-email" class="form-control" type="text" placeholder="Confirm Email" required>
+         <input id="Password" class="form-control" type="password" placeholder="Password" required>
 
-      </div>
+                <div class="panel-body">
+                <div class="form-check">
+                  <label for="consoles">Please check the consoles that you play on.</label>
+                  <ul>
+                    <li>
+                      <input type="checkbox" name="Xbox">Xbox 1
+                    </li>
+                    <li>
+                      <input type="checkbox" name="ps4">PS4
+                    </li>
+                    <li>
+                      <input type="checkbox" name="nin-swtch">Nintendo Switch
+                    </li>
+                    <li>
+                      <input type="checkbox" name="nin-3ds">Nintendo 3DS
+                    </li>
+                    <li>
+                      <input type="checkbox" name="nin-wu">Nintendo Wii U
+                    </li>
+                    <li>
+                      <input type="checkbox" name="pc">PC
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="panel-body">
+                <div class="form-check">
+                  <label class="form-check-label" for="genres">Please select the game genres that you most enjoy playing</label>
+                  <ul>
+                    <li>
+                      <input class="form-check-input" type="checkbox" name="action">Action
+                    </li>
+                    <li>
+                      <input class="form-check-input" type="checkbox" name="act-adv">Action/adventure
+                    </li>
+                    <li>
+                      <input class="form-check-input" type="checkbox" name="adventure">Adventure
+                    </li>
+                    <li>
+                      <input class="form-check-input" type="checkbox" name="rpg">RPG
+                    </li>
+                    <li>
+                      <input class="form-check-input" type="checkbox" name="sim">Simulator
+                    </li>
+                    <li>
+                      <input class="form-check-input" type="checkbox" name="sports">Sports
+                    </li>
+                  </ul>
+                </div>
+                <label for="fav-games">Please list your three favorite games.</label>
+                <div class="form-group-row">
+                  <div class="col-xs-12, favs">
+                    <input id="fav1" type="text" name="fav1">
+                  </div>
+                </div>
+                <div class="form-group-row">
+                  <div class="col-xs-12, favs">
+                    <input id="fav2" type="text" name="fav2">
+                  </div>
+                </div>
+                <div class="form-group-row">
+                  <div class="col-xs-12, favs">
+                    <input id="fav3" type="text" name="fav3">
+                  </div>
+                </div>
+                  </div>
       <div class="modal-footer">
         <div>
-          <button type="submit" class="btn btn-success btn-lg btn-block">Register</button>
+          <button type="submit" class="btn btn-success btn-lg btn-block">Sign Me Up!</button>
         </div>
         <div>
           <button id="register_login_btn" type="button" class="btn btn-link">Log In</button>
